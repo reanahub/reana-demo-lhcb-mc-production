@@ -13,16 +13,16 @@ These events are used in the following analyses:
 
 ### Lepton flavor violation in B->Kll
 
-![](docs/b2kll1)
+![](docs/b2kll1.png)
 
 
-![](docs/b2kll2)
+![](docs/b2kll2.png)
 
 ### Observation of the very rare Bs->mumu
 
-![](docs/b2mumu)
+![](docs/bsmumu.png)
 
-![](docs/b2mumu2)
+![](docs/bsmumu2.png)
 
 Shown in green are the two muons.
 
