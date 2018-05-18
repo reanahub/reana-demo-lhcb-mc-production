@@ -1,0 +1,4 @@
+lb-run --use ProdConf --use AppConfig.v3r164 Boole/v26r3 gaudirun.py prodConf_Boole.py
+lb-run --use ProdConf --use AppConfig.v3r164 Moore/v14r8p1 gaudirun.py prodConf_Moore.py
+lb-run --use ProdConf --use AppConfig.v3r218 Brunel/v43r2p11 gaudirun.py prodConf_Brunel.py
+lb-run --use ProdConf --use AppConfig.v3r164 DaVinci/v32r2p1 gaudirun.py prodConf_DaVinci.py
