@@ -2,21 +2,13 @@
 
 ## About
 
-This example shows Monte Carlo events that are used in some of the most renowned LHCb physics analyses.
+This example shows how Monte Carlo events are generated at the LHCb experiment.
 
 
 ## Results
 
-
 Here presented are visualised events that were simulated.
-These events are used in the following analyses:
-
-### Lepton flavor violation in B->Kll
-
-![](docs/b2kll1.png)
-
-
-![](docs/b2kll2.png)
+These events are used in the following analysis:
 
 ### Observation of the very rare Bs->mumu
 
@@ -25,7 +17,5 @@ These events are used in the following analyses:
 ![](docs/bsmumu2.png)
 
 Shown in green are the two muons.
-
-### Measurements of CP asymmetry in B->DsK
 
 
