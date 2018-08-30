@@ -1,0 +1,21 @@
+inputs:
+  files:
+    - code/prodConf_Gauss.py 
+    - code/prodConf_Boole.py 
+    - code/prodConf_Moore.py 
+    - code/prodConf_Brunel.py 
+    - code/prodConf_DaVinci.py 
+workflow:
+  type: serial
+  specification:
+    steps:
+      - environment: 'lhcbdev/slc5-build'
+        commands:
+        - bash LbLogin -c x86_64-slc5-gcc43-opt
+        - bash lb-run --use ProdConf --use AppConfig.v3r214 --use DecFiles.v27r72 Gauss/v45r11 gaudirun.py prodConf_Boole.py
+        - bash lb-run --use ProdConf --use AppConfig.v3r164 Boole/v26r3 gaudirun.py prodConf_Boole.py
+        - bash lb-run --use ProdConf --use AppConfig.v3r164 Moore/v14r8p1 gaudirun.py prodConf_Moore.py
+        - bash LbLogin -c x86_64-slc5-gcc46-opt
+        - bash lb-run --use ProdConf --use AppConfig.v3r218 Brunel/v43r2p11 gaudirun.py prodConf_Brunel.py
+        - bash lb-run --use ProdConf --use AppConfig.v3r164 DaVinci/v32r2p1 gaudirun.py prodConf_DaVinci.py
+
